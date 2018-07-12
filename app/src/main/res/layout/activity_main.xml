@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,28 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/boton1"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="BOTON 1"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/boton1"
-        android:layout_below="@+id/boton1"
-        android:text="BOTON 2"
-        android:id="@+id/boton2"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/boton2"
         android:layout_centerHorizontal="true"
-        android:text="BOTON 3"
-        android:id="@+id/boton3"/>
+        android:layout_centerVertical="true">
 
+        <Button
+            android:id="@+id/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="BOTON 1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/boton1"
+            android:layout_below="@+id/boton1"
+            android:text="BOTON 2"
+            android:id="@+id/boton2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boton2"
+            android:layout_centerHorizontal="true"
+            android:text="BOTON 3"
+            android:id="@+id/boton3"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
